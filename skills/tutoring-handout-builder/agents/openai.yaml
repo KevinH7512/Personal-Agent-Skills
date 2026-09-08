@@ -1,0 +1,4 @@
+interface:
+  display_name: "家教讲义生成器"
+  short_description: "将K/Q/A素材生成双版讲义，或把学习PDF重建为可编辑Word"
+  default_prompt: "使用 $tutoring-handout-builder，将我提供的K/Q/A素材生成学生版和答案版，或将单个学习PDF重建为科学符号准确、内容可编辑的Word讲义。"
