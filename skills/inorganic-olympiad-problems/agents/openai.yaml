@@ -1,0 +1,4 @@
+interface:
+  display_name: "2026国初无机与配合物命题"
+  short_description: "将化学文献改编为2026国初风格的无机与配合物综合题，附答案与评分"
+  default_prompt: "使用 $inorganic-olympiad-problems 根据我提供的文献及补充材料，编写一道以2026年国初为主要风格的无机与配合物综合题，附参考答案、评分建议和来源说明，不考有机合成。"

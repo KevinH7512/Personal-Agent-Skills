@@ -7,10 +7,12 @@
 | Skill | 用途 |
 | --- | --- |
 | [tutoring-handout-builder](skills/tutoring-handout-builder/SKILL.md) | 从 K/Q/A 素材生成集中式或穿插式学生/答案 Word 讲义，或将化学学习 PDF 重建为可编辑讲义。 |
-
 | [analytical-reading-report](skills/analytical-reading-report/SKILL.md) | 根据化学文献及补充材料，沿用分析化学小班报告的栏目与风格，生成包含独立评论的可编辑 Word；默认无批注、无修订痕迹。 |
+| [inorganic-olympiad-problems](skills/inorganic-olympiad-problems/SKILL.md) | 根据文献及补充材料，编写以2026年国初为主要风格的无机与配合物综合题，附答案、评分与来源说明。 |
 
 `analytical-reading-report` 已通过 Skill 结构校验，尚未用新文献完成整篇报告试运行。使用时提供论文及补充材料，并调用 `$analytical-reading-report`。
+
+`inorganic-olympiad-problems` 已通过 Skill 结构与引用检查，尚未用新文献完成独立成题试运行。提供论文及补充材料后，可调用 `$inorganic-olympiad-problems`；默认生成一道中文综合题，并附参考答案、评分建议和文献改编说明，不考纯有机合成。原试题 PDF 不随本仓库分发。
 
 ## 结构
 
@@ -21,7 +23,11 @@ skills/
 │   ├── references/
 │   ├── scripts/
 │   └── agents/openai.yaml
-└── analytical-reading-report/
+├── analytical-reading-report/
+│   ├── SKILL.md
+│   ├── references/
+│   └── agents/openai.yaml
+└── inorganic-olympiad-problems/
     ├── SKILL.md
     ├── references/
     └── agents/openai.yaml
