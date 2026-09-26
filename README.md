@@ -1,6 +1,6 @@
 # Personal Agent Skills
 
-保存经过实际使用验证的 Agent Skills，用于版本控制和跨电脑、跨 Agent 分发。[本 GitHub 仓库](https://github.com/KevinH7512/Personal-Agent-Skills)是这些 Skills 的 canonical source；修改以仓库版本为准。
+保存个人 Agent Skills，用于版本控制和跨电脑、跨 Agent 分发。[本 GitHub 仓库](https://github.com/KevinH7512/Personal-Agent-Skills)是这些 Skills 的 canonical source；修改以仓库版本为准。
 
 ## Skills
 
@@ -8,14 +8,22 @@
 | --- | --- |
 | [tutoring-handout-builder](skills/tutoring-handout-builder/SKILL.md) | 从 K/Q/A 素材生成集中式或穿插式学生/答案 Word 讲义，或将化学学习 PDF 重建为可编辑讲义。 |
 
+| [analytical-reading-report](skills/analytical-reading-report/SKILL.md) | 根据化学文献及补充材料，沿用分析化学小班报告的栏目与风格，生成包含独立评论的可编辑 Word；默认无批注、无修订痕迹。 |
+
+`analytical-reading-report` 已通过 Skill 结构校验，尚未用新文献完成整篇报告试运行。使用时提供论文及补充材料，并调用 `$analytical-reading-report`。
+
 ## 结构
 
 ```text
 skills/
-└── tutoring-handout-builder/
+├── tutoring-handout-builder/
+│   ├── SKILL.md
+│   ├── references/
+│   ├── scripts/
+│   └── agents/openai.yaml
+└── analytical-reading-report/
     ├── SKILL.md
     ├── references/
-    ├── scripts/
     └── agents/openai.yaml
 ```
 
